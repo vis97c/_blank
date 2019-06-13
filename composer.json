@@ -1,0 +1,17 @@
+{
+    "name": "vis97c/fashiongirls",
+    "description": "fashion girls studio app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Saa",
+            "email": "vis97c@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": ["mix.php"]
+    }
+}
