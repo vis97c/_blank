@@ -1,0 +1,16 @@
+// main.scss
+@import 'base/module';
+// @import 'components/module';
+// @import 'pseudo/module';
+body{
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	// background: $darker;
+	&::-webkit-scrollbar{
+		width: 7px;
+		background-color: #000;
+	}
+	&::-webkit-scrollbar-thumb{
+		border-width:0;
+	}
+}

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit60db080ec211cb3fa07f25d3ce257d75
+class ComposerStaticInit719e87b30b53f7cf970ac4ebdc680aa1
 {
     public static $files = array (
         '9d3d2168469a47eda024d41233ad59e9' => __DIR__ . '/../..' . '/mix.php',

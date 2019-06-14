@@ -13872,8 +13872,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\fashiongirls\src\app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\fashiongirls\src\scss\main.scss */"./src/scss/main.scss");
+__webpack_require__(/*! C:\xampp\htdocs\_blank\src\app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\_blank\src\scss\main.scss */"./src/scss/main.scss");
 
 
 /***/ })
