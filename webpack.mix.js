@@ -1,5 +1,4 @@
 let mix = require('laravel-mix');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -21,15 +20,19 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 			]
 		}
 	}
-}).version().setPublicPath('public_html');
-
+}).version().setPublicPath('public_html').copy('src/index.php', 'public_html').setPublicPath('public_html');
 if (mix.inProduction()) {
     mix.version();
 }
-if (mix.inWatch()) {
-    mix.browserSync();
+if(process.env.APP_ENV=='local'){
+	let proxy_url = process.env.BROWSERSYNC_PROXY_URL;
+	mix.browserSync({
+		proxy: proxy_url
+	})
 }
-// }).copy('src/index.html', 'public_html').setPublicPath('public_html');
+// if (mix.inWatch()) {
+//     mix.browserSync();
+// }
 
 // Full API
 // mix.js(src, output);
