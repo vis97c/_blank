@@ -1,5 +1,10 @@
 // _variables.scss
+$dorado: #986F33;
+$main_font: 'Josefin Sans', sans-serif;
+$second_font: 'Satisfy', cursive;
+
 //queries
+$mobile: 'screen and (max-width: 720px)';
 // verticalFix: sumar/restar 55px al height si se agrega/quita otro icono
 // $query_verticalFix: 'all and (max-height: 420px) and (min-width: 645px)';
 // $query_detachSidebar: 'all and (max-width: 1164px) and (min-width: 645px)';
@@ -18,7 +23,7 @@ $dark: #26272b;//embers #1
 $dark_n1:#222327;
 $blue_dark: #2c2d32;
 //$darker:#1b1b1e;
-$darker: darken($dark, 5);
+// $darker: darken($dark, 5);
 $narrojo: #eb3d2d;//embers #2
 
 $verde:#38d52f;

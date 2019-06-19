@@ -1,5 +1,5 @@
 // _general.scss
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');//default font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap');//default font
 html{
 	width: 100%;
 	height: 100%;
@@ -16,6 +16,38 @@ html{
 	background: narrojo(.75);
 	color: #fff;
 }
+h1,h2,h3,h4,h5,h6{
+	font-family: $second_font;
+}
+svg{
+	width: 100%;
+	height: auto;
+	> *{
+		&:not([_fill]), &:not([fill]){
+			// fill: #000;
+		}
+		&[_fill*="#FFF"], &[_fill*="#fff"]{
+			fill: #fff;
+		}
+		&[_fill*="#000"]{
+			fill: #000;
+		}
+		&[_fill*="#986F33"], &[_fill*="#986f33"]{
+			//dorado
+			fill: $dorado;
+		}
+		&[_stroke*="#FFF"], &[_stroke*="#fff"]{
+			stroke: #fff;
+		}
+		&[_stroke*="#000"]{
+			stroke: #000;
+		}
+		&[_stroke*="#986F33"], &[_stroke*="#986f33"]{
+			//dorado
+			stroke: $dorado;
+		}
+	}
+}
 i{
 	&[class*='fa-']{
 		font-size:1em;
@@ -23,6 +55,15 @@ i{
 			font-size:inherit;
 		}
 	}
+}
+.emoji{
+	display: inline;
+	width: 1.4em;
+	height: 1.4em;
+	margin-bottom: -0.3em;
+	font-size: inherit;
+	user-select: none; // unselectable
+	touch-action: manipulation; // disables tap zoom
 }
 img:not(.emoji){
 	text-align: center;
@@ -48,15 +89,6 @@ img:not(.emoji){
 		left:0;
 	}
 }
-.emoji{
-	display: inline;
-	width: 1.4em;
-	height: 1.4em;
-	margin-bottom: -0.3em;
-	font-size: inherit;
-	user-select: none; // unselectable
-	touch-action: manipulation; // disables tap zoom
-}
 
 body > img {
 	width: auto!important;
@@ -81,9 +113,9 @@ img:not(.emoji) {
 code{
 	background: negro(1);
 	padding: 0 5px;
-  @include border-radius(3px);
-  word-break: break-word;
-  white-space: pre-wrap;
+	word-break: break-word;
+	white-space: pre-wrap;
+	@include border-radius(3px);
 }
 form{
 	.button{
@@ -201,7 +233,7 @@ blockquote{
 		content: ">";
 	}
 
-	&>p {
+	& > p {
 		display: inline-block;
 		color: inherit!important;
 	}
@@ -229,5 +261,17 @@ blockquote{
 	}
 	._line{
 		color:$secondary;
+	}
+}
+.icon{
+	height: auto;
+	@include flexbox(row, nowrap, center, center);
+	&[data-size~="_35"]{
+		width: 35px;
+		font-size: 35px;
+	}
+	&[data-size~="_25"]{
+		width: 25px;
+		font-size: 25px;
 	}
 }

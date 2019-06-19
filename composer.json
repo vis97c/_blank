@@ -1,6 +1,6 @@
 {
-    "name": "vis97c/fashiongirls",
-    "description": "fashion girls studio app",
+    "name": "vis97c/_blank",
+    "description": "Nuevo proyecto",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -12,6 +12,9 @@
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
-        "files": ["mix.php"]
+        "files": ["public_html/mix.php"]
+    },
+    "config": { 
+        "vendor-dir": "public_html/vendor" 
     }
 }

@@ -1,5 +1,5 @@
 <?php
-  require_once '../vendor/autoload.php';
+  require_once './vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,25 +11,25 @@
 	<meta http-equiv="Content-Language" content="es">
 
 	<!-- inicia SEO -->
-		<title>_Blank app | Using Vue.js + Laravel mix in a node.js enviroment</title>
+		<title>TITULO | SUBTITULO</title>
 		<link type="image/ico" rel="icon" href="/favicon.ico">
-		<link rel="canonical" href="URL FULL AQUI">	
-		<meta name="description" content="DESCRIPCION AQUI">
-		<meta name="Keywords" content="KEYWORDS AQUI">
+		<link rel="canonical" href="FULL_URL">	
+		<meta name="description" content="DESCRIPCION">
+		<meta name="Keywords" content="TAGS">
 		<!-- inicia TWITTER CARD -->
 			<meta name="twitter:card" content="summary" >
-			<meta name="twitter:title" content="_Blank | Vue.js + Laravel mix app" >
+			<meta name="twitter:title" content="TITULO | SUBTITULO" >
 			<meta name="twitter:description" content="DESCRIPCION" >
-			<meta name="twitter:image" content="URL DE IMAGEN DE MUESTRA AQUI" >
-			<meta name="twitter:creator" content="CUENTA DE TWITTER" >
+			<meta name="twitter:image" content="FULL_URL/images/MINIATURA.png" >
+			<meta name="twitter:creator" content="@EMPRESA" >
 		<!-- termina TWITTER CARD -->
 		<!-- inicia OPEN GRAPH -->
-			<meta property="og:site_name" content="NOMBRE CORTO DEL SITIO" >
+			<meta property="og:site_name" content="Fashion Girls" >
 			<meta property="og:type" content="website">
-			<meta property="og:url" content="URL FULL AQUI" >
-			<meta property="og:title" content="_Blank app | Using Vue.js + Laravel mix in a node.js enviroment" >
+			<meta property="og:url" content="FULL_URL" >
+			<meta property="og:title" content="TITULO | SUBTITULO" >
 			<meta property="og:description" content="DESCRIPCION" >
-			<meta property="og:image" content="URL DE IMAGEN DE MUESTRA AQUI" >
+			<meta property="og:image" content="FULL_URL/images/MINIATURA.png" >
 		<!-- termina OPEN GRAPH -->
 	<!-- termina SEO -->
 
@@ -44,13 +44,13 @@
 	<link type="text/css" rel="stylesheet" href="<?php echo mix('/css/main.css'); ?>">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141703275-2"></script>
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141703275-3"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-141703275-2');
+		gtag('config', 'UA-141703275-3');
 	</script> -->
 </head>
 <body>

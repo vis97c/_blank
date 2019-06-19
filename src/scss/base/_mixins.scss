@@ -196,6 +196,10 @@
 	-webkit-transition: $v;
 	transition: $v;
 }
+// @mixin transition-delay($v) {
+// 	-webkit-transition-delay: $v;
+// 	transition-delay: $v;
+// }
 @mixin transform($v) {
 	-o-transform: $v;
 	-ms-transform: $v;
@@ -215,10 +219,10 @@
 	animation: $v;
 }
 @mixin animation-delay($v){
-	-o-animation: $v;
-	-moz-animation: $v;
-	-webkit-animation: $v;
-	animation: $v;
+	-o-animation-delay: $v;
+	-moz-animation-delay: $v;
+	-webkit-animation-delay: $v;
+	animation-delay: $v;
 }
 // @mixin keyframes($v) {
 // 	@-webkit-keyframes #{$v} {

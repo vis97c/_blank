@@ -1,22 +1,23 @@
 {
-	"name": "fashiongirls",
+	"name": "Nuevo_proyecto",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "app.js",
 	"scripts": {
 		"dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+		"production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"g_icons": "vsvg -s ./svg-icons -t ./src/compiled-icons"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://vis97c@bitbucket.org/vis97c/fashion-girls.git"
+		"url": "GIT_URL"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"homepage": "https://bitbucket.org/vis97c/fashion-girls#readme",
+	"homepage": "GIT_URL#readme",
 	"devDependencies": {
 		"@vue/cli-plugin-babel": "^3.8.0",
 		"@vue/cli-service": "^3.8.0",
@@ -33,6 +34,7 @@
 	"dependencies": {
 		"browser-sync": "^2.26.7",
 		"core-js": "^2.6.5",
+		"jquery": "^3.4.1",
 		"vue": "^2.6.10"
 	}
 }
