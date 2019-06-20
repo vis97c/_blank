@@ -40,7 +40,14 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="white">
 
+	<!-- Main font @GoogleFonts -->
+	<link rel="stylesheet" href="FUENTE_1">
+	<!-- Secondary font @GoogleFonts -->
+	<link rel="stylesheet" href="FUENTE_2_SI_LA_HAY">
+	<!-- Icons @FontAwesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	
+	<!-- Custom web app styles -->
 	<link type="text/css" rel="stylesheet" href="<?php echo mix('/css/main.css'); ?>">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
