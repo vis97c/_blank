@@ -13,23 +13,23 @@
 	<!-- inicia SEO -->
 		<title>TITULO | SUBTITULO</title>
 		<link type="image/ico" rel="icon" href="/favicon.ico">
-		<link rel="canonical" href="FULL_URL">	
+		<link rel="canonical" href="https://www.DOMINIO/">	
 		<meta name="description" content="DESCRIPCION">
 		<meta name="Keywords" content="TAGS">
 		<!-- inicia TWITTER CARD -->
 			<meta name="twitter:card" content="summary" >
 			<meta name="twitter:title" content="TITULO | SUBTITULO" >
 			<meta name="twitter:description" content="DESCRIPCION" >
-			<meta name="twitter:image" content="FULL_URL/images/MINIATURA.png" >
+			<meta name="twitter:image" content="https://www.DOMINIO/images/MINIATURA.png" >
 			<meta name="twitter:creator" content="@EMPRESA" >
 		<!-- termina TWITTER CARD -->
 		<!-- inicia OPEN GRAPH -->
 			<meta property="og:site_name" content="Fashion Girls" >
 			<meta property="og:type" content="website">
-			<meta property="og:url" content="FULL_URL" >
+			<meta property="og:url" content="https://www.DOMINIO" >
 			<meta property="og:title" content="TITULO | SUBTITULO" >
 			<meta property="og:description" content="DESCRIPCION" >
-			<meta property="og:image" content="FULL_URL/images/MINIATURA.png" >
+			<meta property="og:image" content="https://www.DOMINIO/images/MINIATURA.png" >
 		<!-- termina OPEN GRAPH -->
 	<!-- termina SEO -->
 
@@ -42,8 +42,6 @@
 
 	<!-- Main font @GoogleFonts -->
 	<link rel="stylesheet" href="FUENTE_1">
-	<!-- Secondary font @GoogleFonts -->
-	<link rel="stylesheet" href="FUENTE_2_SI_LA_HAY">
 	<!-- Icons @FontAwesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	

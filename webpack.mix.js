@@ -20,9 +20,28 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 			]
 		}
 	}
-}).version().setPublicPath('public_html').copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html');
+}).version().webpackConfig({
+	module: {
+		rules: [
+			{
+				test: /\.(mov|mp4|webm)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: 'video/[name].[ext]',
+							// outputPath: 'video'
+						}  
+					}
+				]
+			},
+		]
+	}
+}).copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html').setPublicPath('public_html');
 if (mix.inProduction()) {
     mix.version();
+}else{
+    mix.sourceMaps(true, 'source-map');
 }
 if(process.env.APP_ENV=='local'){
 	let proxy_url = process.env.BROWSERSYNC_PROXY_URL;
