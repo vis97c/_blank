@@ -14,7 +14,7 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 	// processCssUrls: false,
 	autoprefixer: {
 		options: {
-			browsers: [
+			overrideBrowserslist: [
 				'> 1%',
 				"last 2 versions"
 			]
