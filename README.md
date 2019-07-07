@@ -53,6 +53,7 @@ Los archivos que debe editar se encuentran en su mayoria en la carpeta "**src/**
 
 - - - Si edita su contraparte presente en "**public_html**", todas sus modificaciones se sobreescribiran en la siguiente compilacion del codigo.
 
+No olvides tambien reemplazar el repositorio remoto con uno de tu propiedad.
 
 ## Contribuciones
 Este es un proyecto personal y no tiene ningun animo de lucro, pero los aportes son bienvenidos.
