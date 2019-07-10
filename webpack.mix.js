@@ -35,6 +35,16 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 					}
 				]
 			},
+			{
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				use: [{
+					loader: 'file-loader',
+					options: {
+					name: 'fonts/[name].[ext]',
+						// outputPath: 'fonts/'
+					}
+				}]
+			},
 		]
 	}
 }).copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html').setPublicPath('public_html');
