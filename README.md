@@ -43,6 +43,18 @@ Con esto listo ya cuenta con todo lo necesario para crear y adaptar su nuevo pro
 
 ```
 
+Configuracion adicional.
+
+- El watcher requiere definir una ruta proxy con la ubicacion de los archivos, Para su comodidad basta con configurar el archivo ".ENV" de la siguiente forma:
+
+- - En el root del proyecto duplique el archivo ".env-example" y guardelo como ".env" sin ningun tipo de extension, se recomienda usar un editor de texto plano para ello.
+
+- - Abra el archivo recien creado y en la linea "BROWSERSYNC_PROXY_URL" reemplazela por una de la ubicacion del directorio "public_html".
+
+- - - Por ejemplo localhost/ROOT/public_html o DOMINIO_VIRTUAL.test asumiendo que este ultimo apunta al directorio publico de su proyecto.
+
+- Si desea modificar alguno de los parametros de webpack basta con sobreescribir su configuracion a travez del archivo "webpack.mix.js". Para mas informacion hacerca del mismo remitase a la documentacion de [laravel.mix](https://laravel-mix.com/docs/4.0/installation).
+
 ## Uso
 
 Los archivos que debe editar se encuentran en su mayoria en la carpeta "**src/**". Todos los archivos presentes en la misma se compilaran y copiaran al directorio "**public_html**", este se creara automaticamente tras la primera compilacion.
