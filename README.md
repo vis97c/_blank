@@ -2,7 +2,7 @@
 Plantilla para desarrollo web con Vue.js integrado.
 - - Con la tecnologia de **Laravel.mix** y el pre-procesado de **Sass**.
 
-
+No olvides visitar nuestro repositorio en github: [_blank](https://github.com/vis97c/_blank)
 
 ## Instalacion
 
