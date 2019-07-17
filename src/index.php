@@ -60,7 +60,37 @@
 </head>
 <body>
 	<noscript>
-      <strong>We're sorry but hello-world doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		<style type="text/css">
+			.noscript{
+				width:100%;
+				height: 100%;
+				overflow: auto;
+				padding: 100px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-ms-flex-flow: row nowrap;
+				flex-flow: row nowrap;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.noscript strong{
+				max-width: 80vh;
+				font-size: 18px;
+				text-align: center;
+			}
+		</style>
+		<div class="noscript">
+    		<strong>Lo sentimos pero esta pagina requiere javascript para funcionar, por favor activalo o usa un navegador compatible.</strong>
+		</div>
     </noscript>
     <div id="app"></div>
     <script type="text/javascript" src="<?php echo mix('js/app.js'); ?>"></script>

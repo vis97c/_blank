@@ -51,7 +51,18 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 						// Output below fonts directory
 						name: "fonts/[name].[ext]",
 					}
-				},
+				}
+			},
+			{
+				test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				// test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				use: {
+					loader: "file-loader",
+					options: {
+						// Output below fonts directory
+						name: "fonts/[name].[ext]",
+					}
+				}
 			},
 		]
 	}

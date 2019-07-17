@@ -49,7 +49,7 @@ Configuracion adicional.
 
 - - En el root del proyecto duplique el archivo "**.env-example**" y guardelo como "**.env**" sin ningun tipo de extension, se recomienda usar un editor de texto plano para ello.
 
-- - Abra el archivo recien creado y en la linea "**BROWSERSYNC_PROXY_URL**" reemplazela por una de la ubicacion del directorio "**public_html**".
+- - Abra el archivo recien creado y en la linea "**BROWSERSYNC_DEV_URL**" reemplazela por la ubicacion del directorio "**public_html**".
 
 - - - Por ejemplo "**localhost/root_de_su_proyecto/public_html**" o "**su_dominio_virtual.test**" asumiendo que este ultimo apunta al directorio publico de su proyecto.
 
