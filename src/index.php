@@ -11,23 +11,23 @@
 	<meta http-equiv="Content-Language" content="es">
 
 	<!-- inicia SEO -->
-		<title>TITULO | SUBTITULO</title>
+		<title>MI PROYECTO | TITULO</title>
 		<link type="image/ico" rel="icon" href="/favicon.ico">
 		<link rel="canonical" href="https://www.DOMINIO/">	
 		<meta name="description" content="DESCRIPCION">
 		<meta name="Keywords" content="TAGS">
 		<!-- inicia TWITTER CARD -->
 			<meta name="twitter:card" content="summary" >
-			<meta name="twitter:title" content="TITULO | SUBTITULO" >
+			<meta name="twitter:title" content="MI PROYECTO | TITULO" >
 			<meta name="twitter:description" content="DESCRIPCION" >
 			<meta name="twitter:image" content="https://www.DOMINIO/images/MINIATURA.png" >
 			<meta name="twitter:creator" content="@EMPRESA" >
 		<!-- termina TWITTER CARD -->
 		<!-- inicia OPEN GRAPH -->
-			<meta property="og:site_name" content="Fashion Girls" >
+			<meta property="og:site_name" content="MI PROYECTO" >
 			<meta property="og:type" content="website">
 			<meta property="og:url" content="https://www.DOMINIO" >
-			<meta property="og:title" content="TITULO | SUBTITULO" >
+			<meta property="og:title" content="MI PROYECTO | TITULO" >
 			<meta property="og:description" content="DESCRIPCION" >
 			<meta property="og:image" content="https://www.DOMINIO/images/MINIATURA.png" >
 		<!-- termina OPEN GRAPH -->
