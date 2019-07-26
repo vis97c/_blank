@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img alt="Vue logo" src="./../assets/logo.png">
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -41,8 +42,31 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+*{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  color: #2c3e50;
+}
+.hello{
+  margin-top: 60px;
+}
+img{
+  width: auto;
+  margin: 0 auto;
+}
+h1, h3 {
+  font-weight: bold;
+}
+h1{
+  margin: 40px 0 20px;
+  font-size: 32px;
+}
 h3 {
-  margin: 40px 0 0;
+  margin: 40px 0 10px;
+  font-size: 20px;
 }
 ul {
   list-style-type: none;
