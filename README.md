@@ -4,16 +4,19 @@ Plantilla para desarrollo web con Vue.js integrado.
 
 No olvides visitar nuestro repositorio en github: [_blank](https://github.com/vis97c/_blank)
 
+## Caracteristicas
+- - Soporte para sass por defecto.
+- - Compilado de assets de imagen, video y fuentes.
+- - Prerenderizado (no-ssr)
+- - soporte para inline svg.
+- - completamente personalizable.
+
+
 ## Instalacion
 
-Para instalarla se requiere un entorno de trabajo con node.js y composer.
+Para instalarla se requiere un entorno de trabajo con node.js. Recuerde clonar el repositorio.
 
-- - En la raiz del proyecto instale los paquetes de composer con el siguiente comando:
-
-```
-     composer install
-```
-- - A continuacion instale los paquetes npm:
+- - Instale los paquetes npm:
 
 ```
      npm install
