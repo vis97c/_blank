@@ -11,24 +11,24 @@
 	<meta http-equiv="Content-Language" content="es">
 
 	<!-- inicia SEO -->
-		<title>SITE_NAME | PAGE_TITLE</title>
+		<title>NOMBRE_DEL_SITIO | PAGE_TITLE</title>
 		<link type="image/ico" rel="icon" href="/favicon.ico">
 		<link rel="canonical" href="https://www.DOMAIN/">	
-		<meta name="description" content="DESCRIPTION">
+		<meta name="description" content="DESCRIPCION">
 		<meta name="Keywords" content="TAGS">
 		<!-- inicia TWITTER CARD -->
 			<meta name="twitter:card" content="summary" >
-			<meta name="twitter:title" content="SITE_NAME | PAGE_TITLE" >
-			<meta name="twitter:description" content="DESCRIPTION" >
+			<meta name="twitter:title" content="NOMBRE_DEL_SITIO | PAGE_TITLE" >
+			<meta name="twitter:description" content="DESCRIPCION" >
 			<meta name="twitter:image" content="https://www.DOMAIN/images/THUMBNAIL.EXTENSION" >
 			<meta name="twitter:creator" content="@EMPRESA" >
 		<!-- termina TWITTER CARD -->
 		<!-- inicia OPEN GRAPH -->
-			<meta property="og:site_name" content="SITE_NAME" >
+			<meta property="og:site_name" content="NOMBRE_DEL_SITIO" >
 			<meta property="og:type" content="website">
 			<meta property="og:url" content="https://www.DOMAIN" >
-			<meta property="og:title" content="SITE_NAME | PAGE_TITLE" >
-			<meta property="og:description" content="DESCRIPTION" >
+			<meta property="og:title" content="NOMBRE_DEL_SITIO | PAGE_TITLE" >
+			<meta property="og:description" content="DESCRIPCION" >
 			<meta property="og:image" content="https://www.DOMAIN/images/THUMBNAIL.EXTENSION" >
 		<!-- termina OPEN GRAPH -->
 	<!-- termina SEO -->

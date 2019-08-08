@@ -1,4 +1,6 @@
 let mix = require('laravel-mix');
+let HtmlWebpackPlugin = require("html-webpack-plugin");
+let PrerenderSpaPlugin = require('prerender-spa-plugin');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -21,6 +23,16 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 		}
 	}
 }).version().webpackConfig({
+	plugins:[
+		new HtmlWebpackPlugin({
+			template: 'src/index.html',
+			inject: false
+		}),
+		new PrerenderSpaPlugin(
+			path.join(__dirname, 'public_html'),
+			[ '/' ]//listado de rutas a prerenderizar
+		),
+	],
 	module: {
 		rules: [
 			{
@@ -66,7 +78,8 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 			},
 		]
 	}
-}).copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html').setPublicPath('public_html');
+}).setPublicPath('public_html');
+// mix.copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html');
 if (mix.inProduction()) {
     mix.version();
 }else{

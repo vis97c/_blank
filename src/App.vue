@@ -29,12 +29,23 @@ export default {
 		// 	//contenido
 		// },
 	},
+	// INICIA LIFEHOOKS
+	// para mas detalles revise la documentacion de vue.js 2.0
+	beforeCreate(){},
 	created() {
-		//free land
+		// el contenido ha sido creado y ahora hace parte del virtualDOM
+		// free land
 	},
+	beforeMount(){},
+	mounted() {
+		// La plantilla a sido montada en el DOM
+	},
+	beforeUpdate() {},
+	updated() {},
 	beforeDestroy() {
 		// window.removeEventListener('scroll');
-	}
-
+	},
+	destroyed() {}
+	// TERMINA LIFEHOOKS
 }
 </script>
