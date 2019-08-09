@@ -2,6 +2,7 @@ let mix = require('laravel-mix');
 let HtmlWebpackPlugin = require("html-webpack-plugin");
 let PrerenderSpaPlugin = require('prerender-spa-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
+const path = require("path");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -24,6 +25,11 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 		}
 	}
 }).webpackConfig({
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, "src")
+		}
+	},
 	plugins:[
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
