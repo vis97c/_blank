@@ -1,6 +1,7 @@
 let mix = require('laravel-mix');
 let HtmlWebpackPlugin = require("html-webpack-plugin");
 let PrerenderSpaPlugin = require('prerender-spa-plugin');
+const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -22,16 +23,12 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 			]
 		}
 	}
-}).version().webpackConfig({
+}).webpackConfig({
 	plugins:[
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
-			inject: false
+			inject: false,
 		}),
-		new PrerenderSpaPlugin(
-			path.join(__dirname, 'public_html'),
-			[ '/' ]//listado de rutas a prerenderizar
-		),
 	],
 	module: {
 		rules: [
@@ -81,7 +78,29 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 }).setPublicPath('public_html');
 // mix.copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html');
 if (mix.inProduction()) {
-    mix.version();
+    mix.version().webpackConfig({
+		plugins:[
+			new PrerenderSpaPlugin({//el prerenderizado solo se compila en produccion
+				staticDir: path.join(__dirname, 'public_html'),
+				routes: [ '/' ],//listado de rutas a prerenderizar
+				minify: {
+					collapseBooleanAttributes: true,
+					collapseWhitespace: true,
+					decodeEntities: true,
+					keepClosingSlash: true,
+					sortAttributes: true,
+					minifyCSS: true,
+					minifyJS: true,
+					removeComments: true,
+				},
+				renderer: new Renderer({
+					injectProperty: '__PRERENDER_INJECTED',
+					inject: false,
+					headless: true,
+				})
+			}),
+		]
+	});
 }else{
     mix.sourceMaps(true, 'source-map');
 }
