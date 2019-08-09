@@ -75,7 +75,7 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 			},
 		]
 	}
-}).setPublicPath('public_html');
+}).setPublicPath('public_html').copy('src/robots.txt', 'public_html').copy('src/sitemap.xml', 'public_html');
 // mix.copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html');
 if (mix.inProduction()) {
     mix.version().webpackConfig({

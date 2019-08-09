@@ -2,6 +2,6 @@ User-agent: *
 #Disallow: /img/
 #Disallow: /css/
 #Disallow: /js/
-Disallow: /php/
-Disallow: /fonts/
+#Disallow: /php/
+#Disallow: /fonts/
 Sitemap: /sitemap.xml
