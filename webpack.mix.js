@@ -101,7 +101,7 @@ if (mix.inProduction()) {
 				},
 				renderer: new Renderer({
 					injectProperty: '__PRERENDER_INJECTED',
-					inject: false,
+					inject: true,
 					headless: true,
 				})
 			}),
