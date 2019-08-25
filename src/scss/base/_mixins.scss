@@ -97,9 +97,9 @@
 		$direction: 180deg;
 	}
 
-	background: nth(nth($color-stops, 1), 1);
-	background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-	background: linear-gradient($direction, $color-stops);
+	background-image: nth(nth($color-stops, 1), 1);
+	background-image: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+	background-image: linear-gradient($direction, $color-stops);
 }
 
 

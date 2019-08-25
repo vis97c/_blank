@@ -8,12 +8,12 @@ html{
 }
 
 ::selection {
-	background: narrojo(.75);
-	color: #fff;
+	// background: narrojo(.75);
+	// color: #fff;
 }
 ::-moz-selection {
-	background: narrojo(.75);
-	color: #fff;
+	// background: narrojo(.75);
+	// color: #fff;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: $second_font;
@@ -21,31 +21,6 @@ h1,h2,h3,h4,h5,h6{
 svg{
 	width: 100%;
 	height: auto;
-	> *{
-		&:not([_fill]), &:not([fill]){
-			// fill: #000;
-		}
-		&[_fill*="#FFF"], &[_fill*="#fff"]{
-			fill: #fff;
-		}
-		&[_fill*="#000"]{
-			fill: #000;
-		}
-		&[_fill*="#986F33"], &[_fill*="#986f33"]{
-			//dorado
-			fill: $dorado;
-		}
-		&[_stroke*="#FFF"], &[_stroke*="#fff"]{
-			stroke: #fff;
-		}
-		&[_stroke*="#000"]{
-			stroke: #000;
-		}
-		&[_stroke*="#986F33"], &[_stroke*="#986f33"]{
-			//dorado
-			stroke: $dorado;
-		}
-	}
 }
 i{
 	&[class*='fa-']{
