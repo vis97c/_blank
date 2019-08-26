@@ -1,6 +1,7 @@
 let mix = require('laravel-mix');
 let HtmlWebpackPlugin = require("html-webpack-plugin");
 let PrerenderSpaPlugin = require('prerender-spa-plugin');
+let { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 const path = require("path");
 /*
@@ -31,6 +32,7 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 		}
 	},
 	plugins:[
+		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
 			inject: false,
@@ -55,7 +57,7 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 			}
 		]
 	}
-}).setPublicPath('public_html').copy('src/to_public', 'public_html', false);
+}).setPublicPath('public_html');
 // mix.copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html');
 if (mix.inProduction()) {
     mix.version().webpackConfig({
@@ -80,7 +82,7 @@ if (mix.inProduction()) {
 				})
 			}),
 		]
-	});
+	}).copy('src/to_public', 'public_html', false);
 }else{
     mix.sourceMaps(true, 'source-map');
 }
