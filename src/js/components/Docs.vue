@@ -1,7 +1,8 @@
 <template>
-  <div class="hello">
-    <img alt="Vue logo" src="./../assets/logo.png">
-    <h1>{{ msg }}</h1>
+  <div class="wrapper">
+    <div class="margin">
+      <router-link to="/" rel="noopener" class="margin">~ Back to Home ~</router-link>
+    </div>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -33,10 +34,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'Docs',
 }
 </script>
 
@@ -50,8 +48,8 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.hello{
-  margin-top: 60px;
+.wrapper{
+  /* margin-top: 60px; */
 }
 img{
   width: auto;
@@ -78,5 +76,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.margin{
+  margin-bottom: 10px;
 }
 </style>

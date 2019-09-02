@@ -15,7 +15,7 @@ const path = require("path");
  |
  */
 
-mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/css').options({
+mix.js('src/js/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/css').options({
 	// processCssUrls: false,
 	autoprefixer: {
 		options: {
@@ -28,7 +28,9 @@ mix.js('src/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/c
 }).webpackConfig({
 	resolve: {
 		alias: {
-			"@": path.resolve(__dirname, "src")
+			"_src": path.resolve(__dirname, "src"),
+			"_components": path.resolve(__dirname, "src/js/components"),
+			"_assets": path.resolve(__dirname, "src/assets"),
 		}
 	},
 	plugins:[
