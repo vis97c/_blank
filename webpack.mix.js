@@ -30,7 +30,7 @@ mix.js('src/js/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_htm
 		alias: {
 			"_src": path.resolve(__dirname, "src"),
 			"_components": path.resolve(__dirname, "src/js/components"),
-			"_assets": path.resolve(__dirname, "src/assets"),
+			// "_assets": path.resolve(__dirname, "src/assets"),
 		}
 	},
 	plugins:[
