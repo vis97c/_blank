@@ -13,15 +13,23 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
-            component: Home
+            name: 'Home',
+            component: Home,
+            meta: {
+                title: '_blank | Home'
+            }
         },
         {
             path: '/get_started',
-            component: GetStarted
+            name: 'GetStarted',
+            component: GetStarted,
+            meta: {
+                title: '_blank | Get Started'
+            }
         },
         // {
         //     path: '/contact',
         //     component: Contact
         // }
     ],
-})
+});
