@@ -196,10 +196,10 @@
 	-webkit-transition: $v;
 	transition: $v;
 }
-// @mixin transition-delay($v) {
-// 	-webkit-transition-delay: $v;
-// 	transition-delay: $v;
-// }
+@mixin transition-delay($v) {
+	-webkit-transition-delay: $v;
+	transition-delay: $v;
+}
 @mixin transform($v) {
 	-o-transform: $v;
 	-ms-transform: $v;
