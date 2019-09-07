@@ -59,7 +59,7 @@ mix.js('src/js/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_htm
 			}
 		]
 	}
-}).setPublicPath('public_html');
+}).setPublicPath('public_html').copy('src/to_public', 'public_html', false);
 // mix.copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html');
 if (mix.inProduction()) {
     mix.version().webpackConfig({
@@ -84,7 +84,7 @@ if (mix.inProduction()) {
 				})
 			}),
 		]
-	}).copy('src/to_public', 'public_html', false);
+	});
 }else{
     mix.sourceMaps(true, 'source-map');
 }
