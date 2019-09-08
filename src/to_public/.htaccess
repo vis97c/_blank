@@ -1,4 +1,4 @@
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf)$">
 	Header add Cache-Control "max-age=2592000, public"
 </FilesMatch>
 
@@ -52,3 +52,11 @@
 	AddOutputFilterByType DEFLATE audio/*
 	AddOutputFilterByType DEFLATE video/mp4
 </IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+ErrorDocument 404 /404

@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
 let HtmlWebpackPlugin = require("html-webpack-plugin");
+let HtmlBeautifyPlugin = require('html-beautify-webpack-plugin');
 let PrerenderSpaPlugin = require('prerender-spa-plugin');
 let { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
@@ -66,22 +67,43 @@ if (mix.inProduction()) {
 		plugins:[
 			new PrerenderSpaPlugin({//el prerenderizado solo se compila en produccion
 				staticDir: path.join(__dirname, 'public_html'),
-				routes: [ '/' ],//listado de rutas a prerenderizar
+				routes: ['/', '/get_started', '/404'],//listado de rutas a prerenderizar
 				minify: {
-					collapseBooleanAttributes: true,
-					collapseWhitespace: true,
-					decodeEntities: true,
-					keepClosingSlash: true,
-					sortAttributes: true,
-					minifyCSS: true,
-					minifyJS: true,
+					// collapseBooleanAttributes: true,
+					// collapseWhitespace: true,
+					// decodeEntities: true,
+					// keepClosingSlash: true,
+					// sortAttributes: true,
+					// minifyCSS: true,
+					// minifyJS: true,
 					removeComments: true,
+				},
+				beautify: {
+					end_with_newline: false,
+					indent_size: 2,
+					indent_with_tabs: true,
+					indent_inner_html: true,
+					preserve_newlines: false,
+					// unformatted: ['p', 'i', 'b', 'span'],
 				},
 				renderer: new Renderer({
 					injectProperty: '__PRERENDER_INJECTED',
 					inject: true,
 					headless: true,
 				})
+			}),
+			new HtmlBeautifyPlugin({
+				config: {
+					html: {
+						end_with_newline: false,
+						indent_size: 2,
+						indent_with_tabs: true,
+						indent_inner_html: true,
+						preserve_newlines: false,
+						// unformatted: ['p', 'i', 'b', 'span']
+					}
+				},
+				// replace: [' type="text/javascript"']
 			}),
 		]
 	});

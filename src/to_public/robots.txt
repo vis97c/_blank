@@ -4,4 +4,4 @@ User-agent: *
 #Disallow: /js/
 #Disallow: /php/
 #Disallow: /fonts/
-Sitemap: /sitemap.xml
+Sitemap: sitemap.xml
