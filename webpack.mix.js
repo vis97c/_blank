@@ -106,9 +106,9 @@ if (mix.inProduction()) {
 				// replace: [' type="text/javascript"']
 			}),
 		]
-	}).copy('src/to_production', 'public_html', false);
+	}).copy('src/production_only', 'public_html', false);
 } else {
-	mix.sourceMaps(true, 'source-map').copy('src/to_development', 'public_html', false);
+	mix.sourceMaps(true, 'source-map').copy('src/dev_only', 'public_html', false);
 }
 if(process.env.APP_ENV=='local'){
 	let proxy_url = process.env.BROWSERSYNC_PROXY_URL;
