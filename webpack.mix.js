@@ -60,7 +60,7 @@ mix.js('src/js/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_htm
 			}
 		]
 	}
-}).setPublicPath('public_html').copy('src/to_public', 'public_html', false);
+}).setPublicPath('public_html');
 // mix.copy('src/index.php', 'public_html').copy('src/mix.php', 'public_html');
 if (mix.inProduction()) {
     mix.version().webpackConfig({
@@ -106,9 +106,9 @@ if (mix.inProduction()) {
 				// replace: [' type="text/javascript"']
 			}),
 		]
-	});
-}else{
-    mix.sourceMaps(true, 'source-map');
+	}).copy('src/to_production', 'public_html', false);
+} else {
+	mix.sourceMaps(true, 'source-map').copy('src/to_development', 'public_html', false);
 }
 if(process.env.APP_ENV=='local'){
 	let proxy_url = process.env.BROWSERSYNC_PROXY_URL;
