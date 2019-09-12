@@ -82,6 +82,48 @@
 		// @include transform(translateY(0));
 	}
 }
+@keyframes fadeIn{
+	0%{}
+	100%{
+		opacity: 1;
+		// @include transform(translateY(0));
+	}
+}
+@keyframes topFade{
+	0%{}
+	100%{
+		opacity: 1;
+		@include transform(translateY(0));
+	}
+}
+@keyframes bottomFade{
+	0%{}
+	100%{
+		opacity: 1;
+		@include transform(translateY(0));
+	}
+}
+@keyframes leftFade{
+	0%{}
+	100%{
+		opacity: 1;
+		@include transform(translateX(0));
+	}
+}
+@keyframes rightFade{
+	0%{}
+	100%{
+		opacity: 1;
+		@include transform(translateX(0));
+	}
+}
+@keyframes openBack{
+	0%{}
+	100%{
+		width: 0;
+	}
+}
+@media screen and (any-hover: hover){
 	.growing_in{
 		max-height: 0;
 		// opacity: 0;
@@ -93,13 +135,6 @@
 			// @include animation(.6s ease-out topFade);
 		}
 	}
-@keyframes fadeIn{
-	0%{}
-	100%{
-		opacity: 1;
-		// @include transform(translateY(0));
-	}
-}
 	.fade_in{
 		opacity: 0;
 		// @include transform(translateY(-5vh));
@@ -110,13 +145,6 @@
 			// @include animation(.6s ease-out topFade);
 		}
 	}
-@keyframes topFade{
-	0%{}
-	100%{
-		opacity: 1;
-		@include transform(translateY(0));
-	}
-}
 	.top_fade{
 		opacity: 0;
 		@include transform(translateY(-5vh));
@@ -127,13 +155,6 @@
 			// @include animation(.6s ease-out topFade);
 		}
 	}
-@keyframes bottomFade{
-	0%{}
-	100%{
-		opacity: 1;
-		@include transform(translateY(0));
-	}
-}
 	.bottom_fade{
 		opacity: 0;
 		@include transform(translateY(5vh));
@@ -144,13 +165,6 @@
 			// @include animation(.6s ease-out bottomFade);
 		}
 	}
-@keyframes leftFade{
-	0%{}
-	100%{
-		opacity: 1;
-		@include transform(translateX(0));
-	}
-}
 	.left_fade{
 		opacity: 0;
 		@include transform(translateX(-5vh));
@@ -161,13 +175,6 @@
 			// @include animation(.6s ease-out bottomFade);
 		}
 	}
-@keyframes rightFade{
-	0%{}
-	100%{
-		opacity: 1;
-		@include transform(translateX(0));
-	}
-}
 	.right_fade{
 		opacity: 0;
 		@include transform(translateX(5vh));
@@ -178,12 +185,6 @@
 			// @include animation(.6s ease-out bottomFade);
 		}
 	}
-@keyframes openBack{
-	0%{}
-	100%{
-		width: 0;
-	}
-}
 	.open_back{
 		&[class~="animated"]{
 			&:before, &:after{
@@ -210,5 +211,5 @@
 			right: 0;
 		}
 	}
-
+}
 // termina animations
