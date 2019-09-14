@@ -1,6 +1,7 @@
 <template>
-  <div class="wrapper">
-    <h1>Sorry, the princess is in another castle</h1>
+  <div class="wrapin">
+    <h1>404</h1>
+    <h2>Sorry, the princess is in another castle</h2>
     <router-link to="/" rel="noopener">~ Go To Home ~</router-link>
   </div>
 </template>
@@ -24,19 +25,25 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.wrapper{
+.wrapin{
   /* margin-top: 60px; */
+  min-height: calc(100vh - 300px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
-h1, h3 {
+h1, h2 {
   font-weight: bold;
 }
 h1{
+  margin: 0;
+  font-size: 96px;
+  color: #42b983;
+}
+h2 {
   margin: 40px 0 20px;
   font-size: 32px;
-}
-h3 {
-  margin: 40px 0 10px;
-  font-size: 20px;
 }
 ul {
   list-style-type: none;

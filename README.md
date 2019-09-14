@@ -105,9 +105,11 @@ Los archivos que debe editar se encuentran en su mayoria en la carpeta "**src/**
 
 - - - Para las rutas prerenderizadas en valor de title sera el definido en la configuracion de vue-router "**src/js/views/index.js**"
 
-- - Si deseas copiar archivos sin necesidad de compilarlos, solo basta con copiarlos a la carpeta "**to_public**". Por defecto esta funcion solo esta disponible al compilar produccion. tambien soporta el uso de subcarpetas:
+- - Si deseas copiar archivos sin necesidad de compilarlos, solo basta con copiarlos a la carpeta "**production_only**". Por defecto esta funcion solo esta disponible al compilar produccion. tambien soporta el uso de subcarpetas:
 
-- - - Por ejemplo al agregar el archivo a "**to_public/images/thumbnail.jpg**" tras compilar podras encontrar este archivo en "**public_html/images/thumbnail.jpg**".
+- - - Por ejemplo al agregar el archivo a "**production_only/images/thumbnail.jpg**" tras compilar podras encontrar este archivo en "**public_html/images/thumbnail.jpg**".
+
+- - - El funcionamiento es equivalente para la carpeta "**dev_only**" ideal si su entorno de desarollo difiere de produccion.
 
 No olvides tambien reemplazar el repositorio remoto con uno de tu propiedad.
 
