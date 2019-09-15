@@ -1,7 +1,7 @@
 <template>
   <div class="wrapin">
     <h1>404</h1>
-    <h2>Sorry, the princess is in another castle</h2>
+    <h2>We are sorry, the princess is in another castle</h2>
     <router-link to="/" rel="noopener">~ Go To Home ~</router-link>
   </div>
 </template>
