@@ -27,7 +27,7 @@ export default {
 }
 .wrapin{
   /* margin-top: 60px; */
-  min-height: calc(100vh - 300px);
+  /* min-height: calc(100vh - 300px); */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
