@@ -108,11 +108,8 @@ if (mix.inProduction()) {
 		]
 	}).copy('src/production_only', 'public_html', false);
 } else {
-	mix.sourceMaps(true, 'source-map').copy('src/dev_only', 'public_html', false);
-}
-if(process.env.APP_ENV=='local'){
 	let proxy_url = process.env.BROWSERSYNC_PROXY_URL;
-	mix.browserSync({
+	mix.sourceMaps(true, 'source-map').copy('src/dev_only', 'public_html', false).browserSync({
 		proxy: proxy_url
 	})
 }

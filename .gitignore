@@ -3,7 +3,7 @@ node_modules/
 vendor/
 public_html/
 dist/
-src/compiled-icons/
+src/js/compiled-icons/
 npm-debug.log
 yarn-error.log
 
