@@ -1,12 +1,18 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from './_home.vue'
-import GetStarted from './_get_started.vue'
-// import Contact from './_contact.vue'
-import NotFound from './_not_found.vue'
+// import Home from './_home.vue'
+// import GetStarted from './_get_started.vue'
+// // import Contact from './_contact.vue'
+// import NotFound from './_not_found.vue'
 
 Vue.use(VueRouter)
+
+// lazyload
+function loadView(view) {
+    return () => import(/* webpackChunkName: "view-[request]" */ `_src/js/views/${view}.vue`)
+}
+// loadView('_vista')
 
 const views = new VueRouter({
     linkActiveClass: "active",
@@ -15,7 +21,7 @@ const views = new VueRouter({
         {
             path: '/',
             name: 'Home',
-            component: Home,
+            component: loadView('_home'),
             meta: {
                 title: '_blank | Home'
             }
@@ -23,14 +29,14 @@ const views = new VueRouter({
         {
             path: '/get_started',
             name: 'GetStarted',
-            component: GetStarted,
+            component: loadView('_getstarted'),
             meta: {
                 title: '_blank | Get Started'
             }
         },
         // {
         //     path: '/contact',
-        //     component: Contact
+        //     component: loadView('_contac')t
         // },
         {
             path: '*',
@@ -39,7 +45,7 @@ const views = new VueRouter({
         {
             path: '/404',
             name: '404',
-            component: NotFound,
+            component: loadView('_notfound'),
             meta: {
                 title: '_blank | 404'
             }
