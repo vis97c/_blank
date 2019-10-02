@@ -27,6 +27,9 @@ mix.js('src/js/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_htm
 		}
 	}
 }).webpackConfig({
+	output: {
+		chunkFilename: 'js/lazy/[name].bundle.js',
+	},
 	resolve: {
 		alias: {
 			"_src": path.resolve(__dirname, "src"),
