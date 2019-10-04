@@ -16,17 +16,7 @@ const path = require("path");
  |
  */
 
-mix.js('src/js/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/css').options({
-	// processCssUrls: false,
-	autoprefixer: {
-		options: {
-			overrideBrowserslist: [
-				'> 1%',
-				"last 2 versions"
-			]
-		}
-	}
-}).webpackConfig({
+mix.js('src/js/app.js', 'public_html/js').sass('src/scss/main.scss', 'public_html/css').webpackConfig({
 	output: {
 		chunkFilename: 'js/lazy/[name].bundle.js',
 	},
@@ -108,6 +98,33 @@ if (mix.inProduction()) {
 				},
 				// replace: [' type="text/javascript"']
 			}),
+		]
+	}).options({
+		// processCssUrls: false,
+		autoprefixer: {
+			options: {
+				overrideBrowserslist: [
+					'> 1%',
+					'last 2 versions'
+				]
+			}
+		},
+		postCss: [
+			require('@fullhuman/postcss-purgecss')({
+				content: [
+					'./src/**/*.html',
+					'./src/**/*.vue'
+				]
+			}),
+			require('cssnano')({
+				'preset': [
+					'default', {
+						'discardComments': {
+							'removeAll': true
+						}
+					}
+				]
+			})
 		]
 	}).copy('src/production_only', 'public_html', false);
 } else {
