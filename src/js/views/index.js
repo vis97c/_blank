@@ -29,7 +29,7 @@ const views = new VueRouter({
         {
             path: '/get_started',
             name: 'GetStarted',
-            component: loadView('_getstarted'),
+            component: loadView('_get_started'),
             meta: {
                 title: '_blank | Get Started'
             }
@@ -45,7 +45,7 @@ const views = new VueRouter({
         {
             path: '/404',
             name: '404',
-            component: loadView('_notfound'),
+            component: loadView('_not_found'),
             meta: {
                 title: '_blank | 404'
             }
