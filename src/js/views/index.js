@@ -136,7 +136,7 @@ views.beforeEach((to, from, next) => {
         }
 
         /* It will change canonicals urls when the router is change*/
-        var canonical = 'https://www.' + initialState.host + to.path;
+        var canonical = 'https://www.' + initialState.host + to.fullPath.split('?')[0];
         // canonical url support
         if (!!document.querySelector("link[rel='canonical']")) {
             // setter
