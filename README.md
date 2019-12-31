@@ -1,12 +1,12 @@
-# _blank
+# vue-mix-template
 Plantilla para desarrollo web con Vue.js integrado.
 - - Con la tecnologia de **Laravel.mix** y el pre-procesado de **Sass**.
 
-No olvides visitar nuestro repositorio en github: [_blank](https://github.com/vis97c/_blank)
+No olvides visitar nuestro repositorio en github: [vue-mix-template](https://github.com/vis97c/vue-mix-template)
 
 ## Caracteristicas
 
-_blank integra por defecto:
+vue-mix-template integra por defecto:
 
 - - Vue.js
 
@@ -55,7 +55,7 @@ Para instalarla se requiere un entorno de trabajo con node.js. Recuerde clonar e
      npm install
 ```
 
-- - **_blank** soporta svg-icons, compile sus iconos personalizados:
+- - **vue-mix-template** soporta svg-icons, compile sus iconos personalizados:
 
 - - - Solo es necesario ejecutarlo una vez o al agregar mas iconos.
 
@@ -122,7 +122,7 @@ Este es un proyecto personal y no tiene ningun animo de lucro, pero los aportes 
 
 - - - No olviden testear con antelacion.
 
-## Acerca de _blank
+## Acerca de vue-mix-template
 
 El uso de esta plantilla hace uso de software libre y su uso es en la misma medida libre.  
 
